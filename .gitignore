@@ -1,0 +1,24 @@
+# 1. Abaikan semua file dan folder secara default
+*
+
+# 2. Jangan abaikan folder (agar Git tetap bisa masuk ke sub-folder untuk mencari CSV)
+!*/
+
+# 3. Jangan abaikan file spesifik yang ingin di-push
+!*.csv
+!notebook.py
+!notebook.ipynb
+
+# 4. Jangan abaikan file .gitignore ini sendiri dan dokumentasi (opsional)
+!.gitignore
+!README.md
+!requirements.txt
+
+# 5. Pastikan folder environment SELALU diabaikan secara absolut (langkah preventif)
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+data-scraping/
+submission/
